@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(85, 9, 35);
+    color: #ffffff;
+    }
+
+.img3 {
+    align-items: center;
+}
+  
+.img{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    width: 400px;
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.img4{
+    margin-bottom: 100px;
+}
+ 
+
+.container{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 215px;
+       
+}
+
+.duracao {
+    width: 300px;
+}
+
+.tempo{
+   display: flex;
+   width: 500px;
+   justify-content: space-between;
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+.barra{
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+progress{
+    height: 15px;
+    width: 0%;
+    background-color: #ffffff;
+}
+
+.ponto{
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+
+.player{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.botao-play, .botao-pause{
+font-size: 70px;
+cursor: pointer;
+}
+
+.setas{
+font-size: 50px;
+cursor: pointer;
+}
+
+.botao-pause{
+    display: none;
+}
+
+#Nomedaplay {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 50px;
+}
+
+    #Nomemusica {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        margin: 50px;
+    }
+
+    #Nomeartista{
+      text-align: center;
+      color: white;
+      font-style: italic;
+      font-size: 40px;
+      margin-bottom: 70px;
+    }
+
+      .dadosdm {
+       color: white;
+   
+        display: inline-block;
+            
+           
+        margin-left: 15px;
+        }
+
+
+
+        .bordadebaixo {
+  
+ 
+            border-top: 2px solid #ff093e;
+              
+            background-color: #ff093e;
+             
+            padding-top: 10px;
+              
+            
+            text-align: center;
+
+              position: fixed;
+
+              
+             
+            bottom: 0;
+              
+             
+            width: 100%; 
+            }
+            
+            .bordadebaixo {
+              display: flex;
+              
+            
+            justify-content: center;
+              
+            
+            align-items: center;
+            }
+            
+            .bordadebaixo img {
+              
+             
+            margin: 0 10px;
+            }
+    
+           
