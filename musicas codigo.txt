@@ -1,0 +1,17 @@
+  <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\evidencias.jpg" alt="Image"width="100"> <h1>Evidências  |   Chitãozinho e Xororó  |   4:56</h1><br>
+
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\exagerado cazuza.jpg" alt="Image"width="100"><br>
+        
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\fake love.jpg" alt="Image"width="100"><br>
+
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\junfrei.jpg" alt="Image"width="100"><br>
+
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\oned.jpg" alt="Image"width="100"><br>
+        
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\plutao.jpg" alt="Image"width="100"><br>
+        
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\queen-ii.jpg" alt="Image"width="100"><br>
+        
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\reconhecimento.jpg" alt="Image"width="100"><br>
+        
+           <img src="C:\Users\darci\OneDrive\Documentos\Player\Imagens\sunflower.jpg" alt="Image"width="100"><br>
