@@ -26,11 +26,12 @@ nomeMusica.textContent = musicas[indexMusica].titulo;
 nomeArtista.textContent = musicas[indexMusica].artista;
 imagem.setAttribute('src', musicas[indexMusica].img);
 
-duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+musica.addEventListener('loadeddata', () => {
+    duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+});
 
 
 
-//Eventos
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
@@ -52,18 +53,14 @@ document.querySelector('.proxima').addEventListener('click', () => {
 });
 
 
-//Funções
+
 function renderizarMusica(index){
-      musica.setAttribute('src', musicas[index].src);
-      musica.addEventListener('loadeddata', () => {
-          nomeMusica.textContent = musicas[index].titulo;
-          nomeArtista.textContent = musicas[index].artista;
-          imagem.src = musicas[index].img;
+    musica.setAttribute('src', musicas[index].src);
+    nomeMusica.textContent = musicas[index].titulo;
+    nomeArtista.textContent = musicas[index].artista;
+    imagem.src = musicas[index].img;
 
-          duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
-      });
-
-      document.body.append(musica);
+    document.body.append(musica);
 }
 
 function tocarMusica(){
@@ -93,3 +90,15 @@ function segundosParaMinutos(segundos){
     }
     return `${campoMinutos}:${campoSegundos}`;
 }
+
+musica.addEventListener("ended", () => {
+    indexMusica++;
+    
+    if (indexMusica >= musicas.length) {
+       
+        indexMusica = 0; 
+    }
+    
+    renderizarMusica(indexMusica);
+    tocarMusica();
+});
