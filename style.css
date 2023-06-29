@@ -68,6 +68,32 @@ progress{
     margin-left: -2px;
 }
 
+
+
+#rd{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.random{
+    display: flex;
+    justify-content: left;
+    margin-left: -200px;
+    margin-right: 150px;
+}
+
+#rpl{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.replay{
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    margin-right: -200px;
+}
 .player{
     width: 300px;
     display: flex;

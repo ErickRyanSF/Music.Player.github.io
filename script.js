@@ -36,6 +36,12 @@ document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 document.querySelector('.botao-pause').style.display = 'none';
+
+document.querySelector('.replay').addEventListener('click', replayMusica);
+
+document.querySelector('.random').addEventListener('click', tocarMusicaAleatoria);
+
+
 musica.addEventListener("timeupdate", atualizarBarra);
 
 document.querySelector('.anterior').addEventListener('click', () => {
@@ -74,6 +80,18 @@ function pausarMusica(){
     document.querySelector('.botao-pause').style.display = 'none';
     document.querySelector('.botao-play').style.display = 'block';
 }
+
+function replayMusica() {
+    musica.currentTime = 0; 
+    tocarMusica(); 
+}
+
+function tocarMusicaAleatoria() {
+    indexMusica = Math.floor(Math.random() * musicas.length); // Seleciona um índice aleatório da lista de músicas
+    renderizarMusica(indexMusica); // Renderiza a música correspondente
+    tocarMusica(); // Inicia a reprodução da música
+}
+
 
 function atualizarBarra(){
     let barra = document.querySelector('progress');
